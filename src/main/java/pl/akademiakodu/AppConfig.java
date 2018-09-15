@@ -1,3 +1,14 @@
+// Projekt KWEJK z Kursu Java
+/*
+*
+* Projekt robiony na kursie Java Bootcamp Online
+* Szkoła : Akademia Kodu
+* Projekt robiony grupowo, w czasie zajęć dnia 15.09.2018
+* Cel: edukacyjny
+*
+* */
+
+
 package pl.akademiakodu;
 
 import org.springframework.boot.SpringApplication;
