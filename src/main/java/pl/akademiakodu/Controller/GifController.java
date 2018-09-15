@@ -5,8 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import pl.akademiakodu.data.GitRepository;
+import pl.akademiakodu.data.GifRepository;
 import pl.akademiakodu.model.Gif;
 
 import java.util.List;
@@ -17,7 +16,7 @@ public class GifController {
 
     //ponizsze powiazanie jest bardzo wazne !!
     @Autowired
-    private GitRepository gifRepository;
+    private GifRepository gifRepository;
 
 
     @RequestMapping("/")

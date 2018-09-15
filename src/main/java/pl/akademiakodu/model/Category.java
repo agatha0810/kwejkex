@@ -1,4 +1,4 @@
-package pl.akademiakodu;
+package pl.akademiakodu.model;
 
 public class Category {
     private int id;
