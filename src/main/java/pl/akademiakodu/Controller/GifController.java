@@ -26,7 +26,7 @@ public class GifController {
         //return "Hello world"; // --> jak to odkomentuje, to tez @ResponseBody
         List<Gif> gifs = gifRepository.getAllGifs();
         modelMap.put("gifs", gifs);
-        return "/home";
+        return "home";
 
     }
 
