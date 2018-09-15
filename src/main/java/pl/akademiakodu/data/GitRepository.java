@@ -3,6 +3,7 @@ package pl.akademiakodu.data;
 import org.springframework.stereotype.Component;
 import pl.akademiakodu.model.Gif;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -32,6 +33,17 @@ public class GitRepository {
 
     public List<Gif> getAllGifs(){
         return ALL_GIFS;
+    }
+
+    public List<Gif> getFavorites(){
+        List<Gif> gifs = new ArrayList<>();
+        for (Gif gif : ALL_GIFS){
+            if (gif.isFavorite()){
+                gifs.add(gif);
+            }
+
+        }
+        return gifs;
     }
 
 }
