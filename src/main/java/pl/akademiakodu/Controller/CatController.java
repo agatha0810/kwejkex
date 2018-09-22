@@ -27,7 +27,7 @@ public class CatController {
     }
 
 
-    //TODO:
+    //TODO: homework
     //napisac metode taką, że do kategorii mają wchodzic odpowiednie numerki
 
 //    @Autowired
