@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+
 @Component
 public class GifRepository {
     private static final List<Gif> ALL_GIFS = Arrays.asList(
@@ -30,7 +31,6 @@ public class GifRepository {
         return null;
     }
 
-
     public List<Gif> getAllGifs(){
         return ALL_GIFS;
     }
@@ -42,6 +42,16 @@ public class GifRepository {
                 gifs.add(gif);
             }
 
+        }
+        return gifs;
+    }
+
+    public List<Gif> findByCategory(int id){
+        List<Gif> gifs = new ArrayList<>();
+        for (Gif gif : ALL_GIFS){
+            if (gif.getCategoryId() == id) {
+                gifs.add(gif);
+            }
         }
         return gifs;
     }
